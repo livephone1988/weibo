@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>@yield('title' ,'Weibo App') - 100个小时做一个微博网站</title>
-	<link rel="stylesheet"  href="/css/app.css">
+	<link rel="stylesheet"  href="{{ mix('css/app.css')}}">
 </head>
 <body>
 
@@ -20,4 +20,3 @@
 		</div>		
 </body>
 </html>
-
