@@ -25,7 +25,15 @@ class UsersController extends Controller
     		'password'=> 'required|confirmed|min:6'
     	]);
 
-    	return;
 
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),     
+        ]);
+
+             session()->flash('success','欢迎，和我一起体验这个微博吧！');
+            return redirect()->route('users.show', [$user]);
+    
     }
 }
