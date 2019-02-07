@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>@yield('title' ,'Weibo App') - 100个小时做一个微博网站</title>
+	<title>@yield('title' ,'Weibo App') - 100 hours on Blog</title>
 	<link rel="stylesheet"  href="{{ mix('css/app.css')}}">
 </head>
 <body>
