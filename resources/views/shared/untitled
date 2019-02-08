@@ -1,3 +1,0 @@
-@foreach(['danger','warning','succes','info'] as $msg)
-	@if(session()->has($msg))
-	<div
